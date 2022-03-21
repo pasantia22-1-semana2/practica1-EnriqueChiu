@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container-budget{
+    background-image: url('../assets/img/fondo2.jpg');
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+.budget-content{
+    color: white;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    text-align: center;
+    padding-top:  50px;
+}
+.budget-content__title{
+    margin: 10px;
+}
+.budget-content__money{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.budget-data{
+    width: 70%;
+    text-align: left;
+    margin-left: 15%;
+}
+.budget-data__ingress{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(74, 204, 161);
+}
+.budget-data__egress{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(233, 7, 7);
+}
+
+.container-data{
+    background-color: rgb(233, 233, 233);
+    height: 80px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-left: 20%;
+    padding-top: 20px;
+    text-align: center;
+}
+.form__select{
+    width: 5%;
+    height: 40px;
+}
+.form__description{
+    width: 50%;
+    height: 35px;
+}
+.form__value{
+    width: 10%;
+    height: 35px;
+}
+.form__button{
+    width: 0;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 0 ;
+
+}
+
+ion-icon{
+    font-size: 45px;
+    color: rgb(37, 153, 99);
+}
+#ion-color-egress{
+    color: red;
+}
+#ion-color-ingress{
+    color: red;
+}
+
+.container-total{
+    background-color: white;
+    height: auto;
+}
+.container-total__des{
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 20px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.table-ingress{
+    
+    width: 40%;
+    margin: 50px;
+}
+.table-ingress__tr{
+    text-align: left;
+}
+.table-ingress__tr--td{
+    height: 50px;
+}
+.table-ingress__tr__th{
+    font-size: 30px;
+    color: rgb(37, 153, 99);
+}
+
+
+.table-egress{
+    width: 40%;
+    margin: 50px;
+}
+.table-egress__tr{
+    text-align: left;
+}
+.table-egress__tr--td{
+    height: 50px;
+}
+.table-egress__tr__th{
+    font-size: 30px;
+    color: rgb(233, 7, 7);
+}
+
+tr:nth-child(even) {
+    background-color: #eeeded;
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicacion Presupuesto</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body onload="loadData()">
+        <div>
+            <main>
+                <section class="container-budget">
+                    <div class="budget-content">
+                        <h3 class="budget-content__title">PRESUPUESTO DISPONIBLE</h3>
+                        <h1 class="budget-content__money" id="presupuesto"></h1>
+                        <div class="budget-data">
+                            <div class="budget-data__ingress">
+                                <h3 id="ingreso"></h3>
+                            </div>
+                            <div class="budget-data__egress">
+                                <h3 id="egreso"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-data">
+                    <div class="form" >
+                        <form id="forma">
+                            <select class="form__select" id="select">
+                                <option>+</option>
+                                <option>-</option>
+                            </select>
+                            <input class="form__description" type="text" placeholder="Agregar Descripcion" id="description">
+                            <input class="form__value" type="number" placeholder="Valor" id="value">
+                        </form>
+                        <button class="form__button" onclick="cargar()"><ion-icon name="checkmark-circle"></ion-icon></button>
+                    </div>
+                </section>
+                <section class="container-total">
+                    <div class="container-total__des">
+                        <table class="table-ingress">
+                            <tr class="table-ingress__tr">
+                                <th class="table-ingress__tr__th">Ingreso</th>
+                            </tr>
+                            <tbody id="table_ingress">
+                            </tbody>
+                        </table>
+                        <table class="table-egress">
+                            <tr class="table-egress__tr">
+                                <th class="table-egress__tr__th">Egreso</th>
+                            </tr>
+                            <tbody id="table_egress">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/egress.js"></script>
+    <script src="./js/ingress.js"></script>
+    <script src="./js/app.js"></script>
+</html>
